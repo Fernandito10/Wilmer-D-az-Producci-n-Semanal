@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Producción</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="2">Control de Producción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dimension Dias</td>
+                <td>
+                    <select id="id-select-dias">
+                        <option value="5" selected>5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <button id="id-btn-cargar-produccion">Cargar Producción</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button id="id-btn-presentar-produccion">Presentar</button>
+                </td>
+                <td>
+                    <textarea name="" id="id-listado-produccion" rows="3" readonly></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button id="id-btn-mayor-produccion">Mayor Producción</button>
+                </td>
+                <td>
+                    <input type="text" id="id-txt-mayor-produccion">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button id="id-btn-menor-produccion">Menor Producción</button>
+                </td>
+                <td>
+                    <input type="text" id="id-txt-menor-produccion">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button id="id-btn-promedio-semanal">Promedio Semanal</button>
+                </td>
+                <td>
+                    <input type="text" id="id-txt-promedio-semanal">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button id="id-btn-promedio-superior">Dias por Encima del Promedio</button>
+                </td>
+                <td>
+                    <input type="text" id="id-txt-promedio-superior">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button id="id-btn-promedio-critico">Dias Criticos</button>
+                </td>
+                <td>
+                    <input type="text" id="id-txt-promedio-critico">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button id="id-btn-produccion-repetida">Dias con Produccion Repetida</button>
+                </td>
+                <td>
+                    <input type="text" id="id-txt-produccion-repetida">
+                </td>
+            </tr>
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+
+    <script type="module" src="./js/app.js"></script>
+</body>
+</html>
